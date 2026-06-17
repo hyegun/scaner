@@ -657,7 +657,7 @@
 
   // ── STATISTIK ─────────────────────────────────────────────────────
   function muatStatistik() {
-    fetch(`${APPS_SCRIPT_URL}?action=statistik`)
+    fetch(`${APPS_SCRIPT_URL}?action=statistikregist`)
       .then(r => r.json())
       .then(res => {
         if (res.status === 'ok') {
