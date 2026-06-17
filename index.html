@@ -39,11 +39,7 @@
       margin-bottom: 20px;
     }
     .btn-open-scanner:active { opacity: 0.85; }
-    .scan-icon-box {
-      width: 28px; height: 28px; border: 2.5px solid var(--gold); border-radius: 6px;
-      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-    }
-    .scan-icon-box::after { content: ''; width: 11px; height: 11px; background: var(--gold); border-radius: 2px; }
+    .btn-open-scanner svg { flex-shrink: 0; }
 
     /* SCANNER MODAL */
     .scanner-modal {
@@ -185,7 +181,7 @@
 <div class="card">
 
   <button class="btn-open-scanner" onclick="bukaScanner()">
-    <div class="scan-icon-box"></div>
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="7" height="7" rx="1" stroke="#f0c419" stroke-width="2" fill="none"/><rect x="4" y="4" width="3" height="3" fill="#f0c419" rx="0.5"/><rect x="15" y="2" width="7" height="7" rx="1" stroke="#f0c419" stroke-width="2" fill="none"/><rect x="17" y="4" width="3" height="3" fill="#f0c419" rx="0.5"/><rect x="2" y="15" width="7" height="7" rx="1" stroke="#f0c419" stroke-width="2" fill="none"/><rect x="4" y="17" width="3" height="3" fill="#f0c419" rx="0.5"/><rect x="15" y="15" width="3" height="3" fill="#f0c419" rx="0.5"/><rect x="19" y="15" width="3" height="3" fill="#f0c419" rx="0.5"/><rect x="15" y="19" width="3" height="3" fill="#f0c419" rx="0.5"/><rect x="19" y="19" width="3" height="3" fill="#f0c419" rx="0.5"/><line x1="1" y1="12" x2="23" y2="12" stroke="#f0c419" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 1"/></svg>
     Scan QR Code Peserta
   </button>
 
